@@ -61,3 +61,5 @@ Vagrantfile
 
 **/db
 
+#.idea files
+/.idea
