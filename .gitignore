@@ -61,3 +61,8 @@ Vagrantfile
 
 **/db
 
+#Linux Shell Commands
+docker-build.sh
+
+#.idea files
+/.idea
