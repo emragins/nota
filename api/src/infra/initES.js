@@ -1,4 +1,5 @@
 const path = require('path');
+
 /**
  * Initialize EventStore connection
  * @param {Object} services Services registry
@@ -6,6 +7,7 @@ const path = require('path');
  */
 function initES(services) {
   const {config} = services;
+  services.logger.info('services.config' + services.config);
   if (!config) {
     throw new Error('Missing config in services registry.');
   }
@@ -19,6 +21,8 @@ function initES(services) {
   } catch (err) {
     return Promise.reject(new Error(`Can't find bootstrap for eventStore of type ${esConfig.type}: ${err.message}`));
   }
+  
+  
   return bootstrap(services, esConfig);
 }
 

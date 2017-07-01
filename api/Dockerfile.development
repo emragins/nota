@@ -1,4 +1,4 @@
-FROM node:6.10.3
+FROM node:7.7.4
 
 USER node
 RUN mkdir ~/.npm-global && npm config set prefix '~/.npm-global' && export PATH=~/.npm-global/bin:$PATH
