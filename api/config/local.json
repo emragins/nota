@@ -14,7 +14,7 @@
     "endPoint": "tcp://eventstore:1113",
     "credentials": {"username": "admin", "password": "changeit"}
   },
-  "readModelStore": "leveldb",
+  "readModelStore": "inmemory",
   "levelDb": {
     "dbDir": "./db"
   }
